@@ -18,6 +18,8 @@ package com.geeksclasses.class1;
  * x = 120
  * Output = -1
  * 
+ * Added recursive solution
+ * 
  * */
 
 public class P1BinarySearchImpl {
