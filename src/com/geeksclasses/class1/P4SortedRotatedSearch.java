@@ -9,6 +9,31 @@ package com.geeksclasses.class1;
 
 public class P4SortedRotatedSearch {
 
+	public static void main(String args[]){
+		
+		int positions[] = {1,3,4,8,9};
+		int cows = 3;
+		Solver solver = new Solver();
+		int range = positions[positions.length]-positions[0];
+		solver.getMinDistance(range, positions, cows);
+		
+	}
 	
 	
+	public static class Solver{
+		
+		public int getMinDistance(int range, int positions[], int cows){
+			for(int i=1;i<=range;i++){
+				if(isPossible(positions,positions.length,cows)){
+					continue;
+				}else
+					return i;
+			}
+		}
+		
+		public int isPossible(int positions[], int arrSize, int cows){
+			
+		}
+		
+	}
 }
